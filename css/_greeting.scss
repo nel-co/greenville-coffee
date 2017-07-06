@@ -1,0 +1,21 @@
+.greeting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('../bg.jpg');
+  background-size: cover;
+  justify-content: center;
+  height: 100vh; width: 100%;
+  position: relative;
+}
+.text-questions {
+  font-size: 1.5em;
+  line-height: 1.6em;
+  text-align: center;
+}
+.start-btn {
+  margin-bottom: 30px;
+  margin-top: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  @include gradBG;
+}

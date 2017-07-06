@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Greenville Coffee Shop Finder</title>
+
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="greeting-container">
+    <div class="text-questions">
+      <div class="greeting">Hello. <br> In the mood for coffee?</div>
+    </div>
+    <div class="btn no-select" id="start-btn">
+      <span class="btn-text">For Sure!</span>
+    </div>
+  </div>
+
+  <div class="questions-container">
+    <div class="text-questions slideIn" id="q1">Cool. <br>Are you traveling solo?</div>
+    <div class="text-questions slideIn" id="q2">Ok. <br>What about with pastries?</div>
+    <div class="text-questions slideIn" id="q3">Alright. <br>Do you have work to do?</div>
+    <div class="btn no-select" id="yes-btn">Yes</div>
+    <div class="btn no-select" id="no-btn">No</div>
+  </div>
+
+  <div class="loading-container">
+    <div class="circle"></div>
+  </div>
+
+  <div class="results-container">
+    <div id="map"></div>
+    <div class="results">
+      <div class="results-info"></div>
+      <div class="restart no-select">Restart</div>
+    </div>
+  </div>
+    
+    <script src="js/app.js" charset="utf-8"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={YOUR API KEY}&callback=initMap"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+$black: #303030;
+$coffee: #E3A478;
+
+@mixin gradBG {
+  background: -moz-linear-gradient(45deg, #f08273 0%, #e3a478 100%);
+  background: -webkit-linear-gradient(45deg, #f08273 0%,#e3a478 100%);
+  background: linear-gradient(45deg, #f08273 0%,#e3a478 100%);
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

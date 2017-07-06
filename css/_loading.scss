@@ -1,0 +1,41 @@
+.loading-container {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.circle {
+  background-color: $coffee;
+  border-radius: 100%;
+  border: 0 solid $coffee;
+  animation: loader 1.5s cubic-bezier(.17,.67,.33,.99) infinite;
+}
+
+$xx: 20px;
+
+@mixin size($xx) {
+  height: $xx;
+  width: $xx;
+}
+
+@keyframes loader {
+  0% {
+    @include size(0px);
+  }
+  29% {
+    @include size(0px);
+  }
+  30% {
+    @include size($xx);
+    background-color: $coffee;
+    border-width: $xx / 2;
+    opacity: 1;
+  }
+  100% {
+    @include size($xx);
+    border-width: 0;
+    opacity: 0;
+    background-color: transparent;
+  }
+}

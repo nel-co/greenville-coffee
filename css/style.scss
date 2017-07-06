@@ -1,0 +1,73 @@
+@import "reset";
+@import "_mixins";
+@import "_greeting";
+@import "_questions";
+@import "_results";
+@import "_loading";
+@import url('https://fonts.googleapis.com/css?family=Biryani:300,700');
+
+body {
+  color: $black;
+  font-family: 'Biryani', sans-serif;
+  overflow-x: hidden;
+  background: url('../bg.jpg');
+  background-size: cover;
+  height: 100vh; width: 100vw;
+}
+
+.btn {
+  @include center;
+  @include gradBG;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  background-color: $coffee;
+  border-radius: 50px;
+  width: 290px;
+  margin-top: 7px; margin-bottom: 7px;
+  padding-top: 16px; padding-bottom: 14px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.no-select {
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.text-questions {
+  position: relative;
+}
+
+.slideIn {
+  -webkit-animation: slideIn .4s cubic-bezier(.17,.67,0,.98);
+          animation: slideIn .4s cubic-bezier(.17,.67,0,.98);
+}
+
+@media screen and(max-width:720px) {
+  .text-questions {
+    text-align: left;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    left: 200px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    left: 200px;
+  }
+  to {
+    right: 0px;
+  }
+}
