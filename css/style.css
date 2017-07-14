@@ -74,6 +74,8 @@ table {
 .questions-container {
   display: none;
   flex-direction: column;
+  background: url("../bg.jpg");
+  background-size: cover;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -162,8 +164,6 @@ table {
 body {
   color: #303030;
   font-family: 'Biryani', sans-serif;
-  background: url("../bg.jpg");
-  background-size: cover;
   overflow: hidden;
   height: 100vh;
   width: 100vw; }
