@@ -9,6 +9,8 @@
 body {
   color: $black;
   font-family: 'Biryani', sans-serif;
+  background: url('../bg.jpg');
+  background-size: cover;
   overflow: hidden;
   height: 100vh; width: 100vw;
 }
@@ -41,8 +43,8 @@ body {
 }
 
 .slideIn {
-  -webkit-animation: slideIn .4s cubic-bezier(.17,.67,0,.98);
-          animation: slideIn .4s cubic-bezier(.17,.67,0,.98);
+  -webkit-animation: slideIn .4s ease;
+          animation: slideIn .4s ease;
 }
 
 @media screen and(max-width:720px) {
@@ -54,17 +56,21 @@ body {
 @-webkit-keyframes slideIn {
   from {
     left: 200px;
+    opacity: 0;
   }
   to {
     right: 0px;
+    opacity: 1;
   }
 }
 
 @keyframes slideIn {
   from {
     left: 200px;
+    opacity: 0;
   }
   to {
     right: 0px;
+    opacity: 1;
   }
 }
